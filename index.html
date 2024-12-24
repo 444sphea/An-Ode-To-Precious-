@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Crush</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #4a4a4a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .envelope-container {
+            position: relative;
+            text-align: center;
+        }
+        .envelope {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background: #e63946;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .flap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: #ff6f61;
+            transform-origin: top;
+            transform: rotateX(0deg);
+            transition: transform 0.5s ease-in-out;
+        }
+        .heart-button {
+            margin-top: 20px;
+            background: #ff6f61;
+            color: #fff;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+        .heart-button:hover {
+            transform: scale(1.1);
+            background: #e63946;
+        }
+        .letter {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            height: 90%;
+            overflow-y: auto;
+        }
+        .header {
+            font-size: 1.5rem;
+            color: #e63946;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .message {
+            font-size: 1rem;
+            line-height: 1.5;
+            text-align: center;
+        }
+        .signature {
+            font-style: italic;
+            color: #6a0572;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .decor {
+            width: 50px;
+            height: 2px;
+            background: #e63946;
+            margin: 10px auto;
+        }
+    </style>
+    <script>
+        function openLetter() {
+            document.querySelector('.letter').style.display = 'block';
+            document.querySelector('.envelope-container').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="envelope-container">
+        <div class="envelope">
+            <div class="flap"></div>
+        </div>
+        <button class="heart-button" onclick="openLetter()">❤</button>
+    </div>
+    <div class="letter">
+        <div class="header">To The One Who Lives Up to Her Name</div>
+        <div class="decor"></div>
+        <div class="message">
+            <strong>An Ode To Precious</strong><br>
+            <em>By Chevy Ostheldane Artiaga Mabini</em>
+            <br><br>
+            Precious, your name whispers to my soul,<br>
+            A melody soft, yet making me whole.<br>
+            In your eyes, I see the stars align,<br>
+            A majestic beauty, eternally divine.<br><br>
+
+            Each word you speak, a gentle art,<br>
+            Etching your name upon my heart.<br>
+            You’re the poem I’ve longed to write,<br>
+            My quiet muse, my guiding light.<br><br>
+
+            Your smile, a dawn that breaks the night, <br>
+            A fleeting glimpse, yet blanding right.<br>
+            In every glance, a world unfolds,<br>
+            A treasure more than words can hold.<br><br>
+
+            Your presence feels like heaven’s glow, <br>
+            A sacred warmth I’ll always know. <br>
+            For you, my prayers rise high each day, <br>
+            A love that time can’t take away.<br><br>
+
+            Your beauty shines, so pure, so rare,<br>
+            A masterpiece beyond compare.<br>
+            Like faith that keeps my spirit strong,<br>
+            You’re in my heart, where you belong.<br><br>
+
+            Through trials, I’d walk a thousand miles,<br>
+            Just to be blessed by one of your smiles.<br>
+            A love devout, my soul confesses,<br>
+            To you, my heart forever presses.<br>
+        </div>
+        <div class="decor"></div>
+        <div class="signature">Forever enchanted by you</div>
+    </div>
+</body>
+</html>
